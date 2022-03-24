@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @* @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")*@
+
+
+    <link href="~/Content/addcss/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/addcss/metisMenu.min.css" rel="stylesheet" />
+    <link href="~/Content/addcss/timeline.css" rel="stylesheet" />
+    <link href="~/Content/addcss/startmin.css" rel="stylesheet" />
+    <link href="~/Content/addcss/morris.css" rel="stylesheet" />
+    <link href="~/Content/addcss/font-awesome.min.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    <div id="wrapper">
+
+       @Html.Partial("_LeftNavBar")
+
+
+        @RenderBody()
+
+    </div>
+
+
+    <script src="~/Scripts/addjs/jquery.min.js"></script>
+    <script src="~/Scripts/addjs/bootstrap.min.js"></script>
+    <script src="~/Scripts/addjs/metisMenu.min.js"></script>
+    <script src="~/Scripts/addjs/raphael.min.js"></script>
+    <script src="~/Scripts/addjs/morris.min.js"></script>
+    <script src="~/Scripts/addjs/morris-data.js"></script>
+
+    <!--<hr />
+    <footer>-->
+        @*<p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>*@
+    <!--</footer>-->
+
+    @*@Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)*@
+</body>
+</html>
